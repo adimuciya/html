@@ -1,0 +1,16 @@
+body{	
+	padding-top: 70px;
+	padding-bottom: 20px;
+	background: url(img/bridge.jpg);
+	background-position: center;
+	background-size: cover;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+html{
+	height: 100%;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
