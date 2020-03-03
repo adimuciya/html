@@ -1,16 +1,88 @@
-body{	
-	padding-top: 70px;
-	padding-bottom: 20px;
-	background: url(img/bridge.jpg);
-	background-position: center;
-	background-size: cover;
-	font-family: 'Raleway', sans-serif;
-	color: white;
+body {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: url(img/bridge.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+    margin: auto; 
 }
-html{
-	height: 100%;
+
+nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #c1fff4;
 }
 a{
-	color: white;
-	text-decoration: none;
+	color: #070246;
+    text-decoration: none;
+
+}
+nav a {    
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+ a:hover {
+    color: #8dccff;
+}
+
+img {
+    width: 30%;
+    float: right;
+    margin: 1.66%;
+}
+h1{
+	text-transform: capitalize;
+	font-size: 50px;
+}
+h2 {
+    text-transform: capitalize;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #cfeaff;
+}
+
+.container{
+	max-width: 700px;
+    margin: 70px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 30px auto;    
+}
+
+.blog {
+    background-color: #c1fff4;    
+    border: solid 20px #8dccff;
+    color: #001a21;
+}
+
+.post {
+    margin: 1em;
+}
+
+.date {
+    color: #0d3d63;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.quote {
+    border-left: solid 5px #8dccff;
+    padding-left: 1em;
 }
