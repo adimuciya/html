@@ -10,22 +10,9 @@ body {
     margin: auto; 
 }
 
-nav {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #c1fff4;
-}
 a{
 	color: #070246;
     text-decoration: none;
-
-}
-nav a {    
-    text-transform: uppercase;
-    font-size: 30px;
 }
 
  a:hover {
@@ -34,13 +21,15 @@ nav a {
 
 img {
     width: 30%;
-    float: right;
+    float: left;
     margin: 1.66%;
 }
+
 h1{
 	text-transform: capitalize;
 	font-size: 50px;
 }
+
 h2 {
     text-transform: capitalize;
 }
@@ -49,6 +38,22 @@ hr {
     border: 0;
     height: 0;
     border-top: 1px solid #cfeaff;
+}
+
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #c1fff4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {    
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
 .container{
