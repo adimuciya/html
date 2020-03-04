@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Travel Blog</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" href="https://www.travelblog.org/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<nav class="navbar">		
+    	<div><a href="index.html">Main page</a></div>
+    	<div><a href="page-two.html">Posts</a></div>
+    	<div><a href="page-three.html">Photoes</a></div>
+    	<div><a href="forms.html">Forms</a></div>
+
+	</nav>
+	<main class="container blog">
+		<span><h2>Registration</h2></span>	
+		<form name="registation" action="#" method="post">
+			<div>
+				<label for="firstname">First Name:</label>
+				<input required type="text" placeholder="First Name" id="firstname" name="firstname">	
+			</div>
+			<div>
+				<label for="lastname">Last Name:</label>
+				<input required type="text" placeholder="Last Name" id="lastname" name="lastname">
+			</div>
+			<div>
+				<label for="male">Male</label>
+				<input type="radio" name="gender" id="male" required>
+				<label for="female">Female</label>
+				<input type="radio" name="gender" id="female" required>
+				<label for="other">Other</label>
+				<input type="radio" name="gender" id="other" required>
+			</div>
+			<div>
+				<label for="email">E-mail:</label>
+				<input type="email" placeholder="email@gmail.com" id="email" name="email" required>				
+			</div>
+			<div>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" pattern="[A-Za-z]{6,}" placeholder="Password" title="Не менее шести латинских букв." required>
+			</div>
+			<div>
+				<label for="birth">Birthday:</label>
+				<input type="date" id="birth" min="1920-01-01" max="2002-01-01" required>
+			</div>
+			<div>
+				<label>
+					<input type="checkbox" id="agree" required>
+					Sell my soul to Satan
+				</label>
+			</div>
+			<div>
+				<input type="submit" value="Register">
+				<input type="reset" value="Reset">
+			</div>
+		</form>	
+
+		
+	</main>
+</body>
+</html>
