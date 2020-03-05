@@ -57,13 +57,21 @@ hr {
 }
 
 .container{
-	max-width: 700px;
-    margin: 70px auto;
-    padding: 20px;
+	  
     display: flex;
+    
+}
+.container-main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 70px auto;
+    padding: 20px;
+    max-width: 700px;  
+}
+.container-form{
+    justify-content: space-between;
+    margin-top: 1em;
 }
 
 .gallery {
