@@ -67,6 +67,31 @@
         </section>
         <section class="container blog container-main">
             <span>
+                <h2>Authorization</h2>
+            </span>
+            <form action="#" method="post" name="authorization">
+            	<div class="container container-form">
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" placeholder="email@gmail.com" id="e-mail" name="e-mail" required>
+                </div>
+                <div class="container container-form">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="password" pattern="[A-Za-z]{6,}" placeholder="Password" title="Не менее шести латинских букв." required>
+                </div>
+                <div class="container container-form">
+                    <label>
+                        <input type="checkbox" id="remember">
+                        Remember me
+                    </label>
+                </div> 
+                <div class="container container-form">
+                    <input type="submit" value="Sign in">
+                    <input type="reset" value="Reset">
+                </div>               
+            </form>
+        </section>
+        <section class="container blog container-main">
+            
                 <h2>Add Article</h2>
             </span>
             <form action="#" method="post" enctype="multipart/form-data" name="addArticle">
