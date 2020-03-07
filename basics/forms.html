@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Travel Blog</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles/style.css">
-	<link rel="icon" href="https://www.travelblog.org/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Travel Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="https://www.travelblog.org/favicon.ico" type="image/x-icon">
 </head>
 <body>
 	<nav class="navbar">		
@@ -57,8 +58,120 @@
 				<input type="reset" value="Reset">
 			</div>
 		</form>	
-
-		
-	</main>
+<body>
+    <nav class="navbar">
+        <div><a href="index.html">Main page</a></div>
+        <div><a href="page-two.html">Posts</a></div>
+        <div><a href="page-three.html">Photoes</a></div>
+        <div><a href="forms.html">Forms</a></div>
+    </nav>
+    <main class="container conteiner-main">
+        <section class="container blog container-main">
+            <span>
+                <h2>Registration</h2>
+            </span>
+            <form name="registation" action="#" method="post">
+                <div class="container container-form">
+                    <label for="firstname">First Name:</label>
+                    <input required type="text" placeholder="First Name" id="firstname" name="firstname">
+                </div>
+                <div class="container container-form">
+                    <label for="lastname">Last Name:</label>
+                    <input required type="text" placeholder="Last Name" id="lastname" name="lastname">
+                </div>
+                <div class="container container-form">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" required>
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" required>
+                </div>
+                <div class="container container-form">
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="email@gmail.com" id="email" name="email" required>
+                </div>
+                <div class="container container-form">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" pattern="[A-Za-z]{6,}" placeholder="Password" title="Не менее шести латинских букв." required>
+                </div>
+                <div class="container container-form">
+                    <label for="birth">Birthday:</label>
+                    <input type="date" id="birth" min="1920-01-01" max="2002-01-01" required>
+                </div>
+                <div class="container container-form">
+                    <label>
+                        <input type="checkbox" id="agree" required>
+                        Sell my soul to Satan
+                    </label>
+                </div>
+                <div class="container container-form">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+            <div class="container container-form">
+                <input type="button" id="resetDate" value="Reset Birthday field">
+            </div>
+        </section>
+        <section class="container blog container-main">
+            <span>
+                <h2>Authorization</h2>
+            </span>
+            <form action="#" method="post" name="authorization">
+            	<div class="container container-form">
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" placeholder="email@gmail.com" id="e-mail" name="e-mail" required>
+                </div>
+                <div class="container container-form">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="password" pattern="[A-Za-z]{6,}" placeholder="Password" title="Не менее шести латинских букв." required>
+                </div>
+                <div class="container container-form">
+                    <label>
+                        <input type="checkbox" id="remember">
+                        Remember me
+                    </label>
+                </div> 
+                <div class="container container-form">
+                    <input type="submit" value="Sign in">
+                    <input type="reset" value="Reset">
+                </div>               
+            </form>
+        </section>
+        <section class="container blog container-main">
+            
+                <h2>Add Article</h2>
+            </span>
+            <form action="#" method="post" enctype="multipart/form-data" name="addArticle">
+                <div class="container container-form">
+                    <label for="authorName">Author Name:</label>
+                    <input required type="text" placeholder="Author Name" id="authorName" name="authorName">
+                </div>
+                <div class="container container-form">
+                    <label for="title">Title:</label>
+                    <input required type="text" placeholder="Title" id="Title" name="Title">
+                </div>
+                <div class="container container-form">
+                    <label for="dateAtricle">Date:</label>
+                    <input type="date" id="dateArticle" name="dateArticle" required>
+                </div>
+                <div class="conteiner container-form">
+                	<label for="loadImg">Some imgs here</label>
+                	<input type="file" id="loadImg" name="loadImg" multiple accept="image/*">
+                </div>
+                <div class="container container-form">
+                   	<textarea name="article" id="article" wrap="soft" cols="50" rows="10" placeholder="Write your article here..." required></textarea>
+                </div>
+                <div class="container container-form">
+                    <input type="submit" value="Send article">
+                    <input type="reset" value="Reset">
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <script src="script/script.js"></script>
 </body>
+
 </html>
