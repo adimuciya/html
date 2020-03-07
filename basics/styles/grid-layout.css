@@ -1,0 +1,61 @@
+.grid-container{
+	/*background-color: pink;*/
+	margin: 0 auto;
+	margin-top: 2rem;
+	max-width: 960px;	
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+}
+.mini-articles img{
+	width:100%;
+	height: auto;
+	border-radius: 0.5rem;
+}
+.mini-articles{
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-areas:
+	"title title title title title title title title title"
+	"author author author author author date date date date"
+	"img img img text text text text text text"
+	"button button button button button button button button button";
+	grid-gap: 1rem;	
+	text-align: center;
+	border: 0.1rem solid white; 
+	border-radius: 1rem;
+	background-color: #CFEAFF;
+	color: #070246;
+}
+.title{
+	grid-area: title;
+	margin: 0;
+	margin-top: 1rem;
+}
+.author{
+	grid-area: author;
+	margin: 0;
+}
+.date{
+	grid-area: date;
+	margin: 0;
+}
+.img-mini{
+	grid-area: img;
+	padding: 0.5rem;
+
+}
+.text{
+	grid-area: text;
+}
+.butt{
+	grid-area: button;
+	background-color: #070246;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	
+	margin: 0;
+	margin-bottom: 0.5rem;
+	color: #EDF8FF;
+	align-self: center;
+}

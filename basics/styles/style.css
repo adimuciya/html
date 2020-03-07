@@ -1,6 +1,5 @@
 body {
-    padding-top: 30px;
-    padding-bottom: 20px;
+    
     background: url(../img/bridge.jpg);
     background-position: center;
     background-size: cover;
@@ -19,10 +18,10 @@ a{
     color: #8dccff;
 }
 
-img {
-    width: 30%;
-    float: left;
-    margin: 1.66%;
+.grid-container img {
+    width: 100%;
+    height: auto;
+    ;
 }
 
 h1{
@@ -41,14 +40,15 @@ hr {
 }
 
 .navbar {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #c1fff4;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
+    
 }
 
 .navbar a {    
@@ -59,37 +59,32 @@ hr {
 .container{
 	  
     display: flex;
+    margin: 0 auto;  
+    margin-top: 5rem;  
     
 }
 .container-main{
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 70px auto;
-    padding: 20px;
+    align-items: center;    
     max-width: 700px;  
 }
 .container-form{
     justify-content: space-between;
-    margin-top: 1em;
-}
+  }  
 
-.gallery {
-    max-width: 1200px;
-    margin: 30px auto;    
-}
 
 .blog {
     background-color: #c1fff4;    
     border: solid 20px #8dccff;
-    color: #001a21;
+    color: #001a21;    
 }
 
 .post {
     margin: 1em;
 }
 
-.date {
+.date, .author, .title {
     color: #0d3d63;
     letter-spacing: 0.2em;
     text-transform: uppercase;
