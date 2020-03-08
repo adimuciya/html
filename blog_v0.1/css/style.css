@@ -1,0 +1,202 @@
+/*Основа*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	color:#070246;
+	/*color: #CFEAFF;*/
+	background-color: #EDF8FF;	
+}
+ul,nav{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	opacity: 0.80;
+	color: #070246;
+}
+a:hover{
+	opacity: 1;
+}
+a.btn{
+	border-radius: 1rem;
+	background-color: #0D3D62;	
+	color: #EDF8FF;
+	border: 0.1rem solid #EDF8FF;
+	opacity: 1;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+}
+a.btn:hover{
+	color: #CFEAFF;
+
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 6.5rem 5rem;
+}
+section:not(.main-page):nth-child(even){
+	background-color: #CFEAFF;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.grid{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.title{
+	font-size: 2rem;
+	text-transform: capitalize;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+hr{
+	width: 250px;
+	height: 0.2rem;
+	background-color: #0D3D62;
+	border: 0;
+	margin-bottom: 3rem;
+}
+section p{
+	text-align: center;
+	line-height: 2;
+	padding: 0 2rem;
+	margin-bottom: 2rem;
+}
+@media (max-width: 1100px){
+	.container{
+		max-width: 960px;
+	}
+}
+@media (max-width: 800px){
+	.container{
+		max-width: 800px;
+	}
+	section{
+		padding: 3rem 1.25rem;
+	}
+}
+
+/*Header*/
+header{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 2rem 6rem 0;	
+	position: absolute;
+	white-space: pre;
+}
+header nav{
+	display: flex;
+}
+header nav li{
+	font-size: 1.2rem;
+	margin:0 2rem;
+}
+@media (max-width: 800px) {
+	header{
+		flex-direction: column;
+		padding: 1rem 3rem;
+	}
+	header h2{
+		padding-bottom: 2rem;
+	}
+}
+
+/*Main page*/
+.main-page{
+	min-height: 100vh;
+	justify-content: center;
+	text-align: center;
+	color: #EDF8FF;
+
+}
+.background-img{
+	background:url(../img/bridge.jpg);	
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.main-page h1{
+	font-weight: 700;
+	font-size: 4rem;
+	margin-bottom: 1rem;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+.main-page h3{
+	font-size: 2.5rem;
+	margin-bottom: 2.5rem;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+.main-page a.btn{
+	padding: 1.5rem 3.5rem;
+}
+@media (max-width: 800px){
+	.main-page h1{		
+		font-size: 2.5rem;
+	}
+	.main-page h3{
+		font-size: 2em;
+	}
+	.main-page a.btn{
+		padding: 1rem 2rem;
+	}
+		
+}
+	
+/*Image gallery*/
+.hiking .grid li{
+	height: 20rem;
+	padding: 1rem;
+}
+
+.hiking .grid li img{
+	width: 100%;
+	height: 100%;
+}
+.hiking .grid li.small {
+  flex-basis: 30%;
+}
+
+.hiking .grid li.large {
+  flex-basis: 70%;
+}
+@media (max-width: 1100px) {
+	.hiking .grid li.large,
+	.hiking .grid li.small{
+		flex-basis: 50%;
+	}
+	
+}
+@media (max-width: 800px) {
+	.hiking .grid li.large,
+	.hiking .grid li.small{
+		flex-basis: 100%;
+	}
+	
+}
