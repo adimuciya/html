@@ -14,18 +14,18 @@
 		<nav>
 			<li><a href="#">Posts</a></li>
 			<li><a href="#">Gallery</a></li>
-			<li><a href="#">Sign in <i class="fas fa-sign-in-alt"></i></a></li>
-			<li><a href="#">Sign up <i class="fas fa-user-plus"></i></a></li>
+			<li><a href="#sign-in">Sign in <i class="fas fa-sign-in-alt"></i></a></li>
+			<li><a href="#sign-up">Sign up <i class="fas fa-user-plus"></i></a></li>
 		</nav>
 	</header>
-	<section class="main-page">
+	<section class="main-page" id="main-page">
 			<div class="background-img"></div>
 			<h1>Welcome to the travel blog!</h1>
 			<h3>Some clever text here</h3>
 			<a href="#" class="btn">So button</a>
 		</section>
 	<div class="container">
-		<section class="hiking">
+		<section class="hiking" id="gallery">
 			<h3 class="title">Here are some places I've been to</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sit veritatis accusantium ut placeat quas facilis labore repellendus, deserunt porro, nisi aspernatur consequatur qui nihil, commodi eveniet perferendis odio dignissimos.</p>
 			<hr>
@@ -46,15 +46,56 @@
 				<li class="large"><img src="img/12.jpg" alt=""></li>
 			</ul>
 		</section>
-		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ut repellendus soluta fugit laudantium culpa, repellat harum. Deserunt quaerat sed quas laborum sint non molestiae illo omnis voluptate, a debitis.</section>
-		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur illo suscipit ducimus alias mollitia? Non blanditiis reprehenderit ullam at magnam deleniti repudiandae similique vero! Accusantium fuga rerum velit qui perferendis.</section>
-		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora praesentium saepe corrupti maxime magnam provident nesciunt, labore iure tempore, maiores? Accusantium ullam architecto atque incidunt quas amet, quae est sint.</section>
-		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia labore voluptate vitae consequuntur doloremque ex sed praesentium rerum, architecto neque deleniti, sint porro, quasi aliquid. Qui, nemo quas eos quibusdam!</section>
-		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod inventore dignissimos eius. Alias dolorem maiores suscipit quas mollitia quae ducimus tempore natus deserunt, totam architecto, dolorum delectus itaque commodi necessitatibus!</section>
-		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ex, et, optio quis odit eum ratione. Laboriosam architecto neque, cupiditate molestias doloremque eaque incidunt libero sunt amet tempore labore ipsa?</section>
-		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate vitae reiciendis, enim laborum, dolorem natus quidem consequuntur, nostrum quas placeat, optio dolorum fugiat. Molestias saepe ipsam quia, nobis earum ab.</section>
-		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus iure nam neque eos accusamus vitae necessitatibus voluptate, ipsum nulla? Recusandae, est deserunt quis magni. Suscipit veritatis, sapiente neque. Commodi, aliquam.</section>
-		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est consequuntur laborum labore aliquam at libero, rem, deserunt doloribus error iste voluptatum magni vero? Aliquid nisi maxime, distinctio voluptas beatae obcaecati!</section>
+		<section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ut repellendus soluta fugit laudantium culpa, repellat harum. Deserunt quaerat sed quas laborum sint non molestiae illo omnis voluptate, a debitis.</p></section>
+		<section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur illo suscipit ducimus alias mollitia? Non blanditiis reprehenderit ullam at magnam deleniti repudiandae similique vero! Accusantium fuga rerum velit qui perferendis.</p></section>
+		<section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora praesentium saepe corrupti maxime magnam provident nesciunt, labore iure tempore, maiores? Accusantium ullam architecto atque incidunt quas amet, quae est sint.</p></section>
+		<section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia labore voluptate vitae consequuntur doloremque ex sed praesentium rerum, architecto neque deleniti, sint porro, quasi aliquid. Qui, nemo quas eos quibusdam!</p></section>
+		<section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod inventore dignissimos eius. Alias dolorem maiores suscipit quas mollitia quae ducimus tempore natus deserunt, totam architecto, dolorum delectus itaque commodi necessitatibus!</p></section>
+		<section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ex, et, optio quis odit eum ratione. Laboriosam architecto neque, cupiditate molestias doloremque eaque incidunt libero sunt amet tempore labore ipsa?</p></section>
+		<section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate vitae reiciendis, enim laborum, dolorem natus quidem consequuntur, nostrum quas placeat, optio dolorum fugiat. Molestias saepe ipsam quia, nobis earum ab.</p></section>
+		<section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus iure nam neque eos accusamus vitae necessitatibus voluptate, ipsum nulla? Recusandae, est deserunt quis magni. Suscipit veritatis, sapiente neque. Commodi, aliquam.</p></section>
+		<section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est consequuntur laborum labore aliquam at libero, rem, deserunt doloribus error iste voluptatum magni vero? Aliquid nisi maxime, distinctio voluptas beatae obcaecati!</p></section>
+		<aside id="sign-in">
+			<div class="form">
+				<form action="#" method="post">
+					<h3 class="title">Sign In</h3>
+					<div class="input">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Username" required>
+					</div>
+					
+					<div class="input">
+						<i class="fas fa-key"></i>
+						<input type="password" placeholder="Password" pattern="[A-Za-z]{6,}" reaquired>
+					</div>
+					<label for="remember">
+						<input type="checkbox" name="remember">
+						Remember me
+					</label>
+					<input type="submit" class="btn" value="Sign-in">
+				</form>
+			</div>
+		</aside>
+		<aside id="sign-up">
+			<div class="form">
+				<form action="#" method="post">
+					<h3 class="title">Sign up</h3>
+					<div class="input">
+						<i class="fas fa-user"></i>
+						<input type="text" placeholder="Username" required>
+					</div>
+					<div class="input">
+						<i class="fas fa-envelope"></i>
+						<input type="email" placeholder="email@email.com" required>
+					</div>					
+					<div class="input">
+						<i class="fas fa-key"></i>
+						<input type="password" placeholder="Password" pattern="[A-Za-z]{6,}" reaquired>
+					</div>					
+					<input type="submit" class="btn" value="Sign-up">
+				</form>
+			</div>
+		</aside>
 	</div>
 </body>
 </html>
