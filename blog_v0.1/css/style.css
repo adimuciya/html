@@ -24,6 +24,7 @@ a:hover{
 	opacity: 1;
 }
 
+
 .btn{
 	border-radius: 1rem;
 	background-color: #0D3D62;	
@@ -268,6 +269,10 @@ input::placeholder{
 	opacity: 0.4;
 }
 input[type="submit"]{
-	padding: 1rem 2.5rem;
-	
+	padding: 1rem 2.5rem;	
+}
+div.close{
+	display: flex;
+	justify-content: space-between;
+	width: 100%
 }
